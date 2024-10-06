@@ -4,7 +4,6 @@ export const BoothDetailCardWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
 
   width: 100%;
   max-width: 540px;
@@ -14,6 +13,7 @@ export const BoothDetailCardThumbnail = styled.img`
   width: 100%;
   height: 23.4375rem;
   display: flex;
+  padding-bottom: 0.75rem;
 `;
 
 export const BoothDetailCardIndicatorWrapper = styled.section`

@@ -12,6 +12,7 @@ interface BoothCardProps {
   to?: string;
   onClickButtonAnimation?: boolean;
 }
+const DEFAULT_IMAGE_URL = "/images/image_waitingNoCard.png";
 
 const BoothCardLayout = ({
   boothTitle,
@@ -32,7 +33,7 @@ const BoothCardLayout = ({
       onClickButtonAnimation={onClickButtonAnimation}
     >
       <S.BoothCardInformationWrapper>
-        <S.BoothCardInformationImage src={boothImage} />
+        <S.BoothCardInformationImage src={boothImage || DEFAULT_IMAGE_URL} />
         <S.BoothCardInformationLabelWrapper>
           <S.BoothCardInformationNameLabel>
             {boothTitle}
